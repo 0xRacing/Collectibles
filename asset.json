@@ -1,0 +1,50 @@
+{
+  "name": "0xRacing Reference",
+  "image": "https://github.com/0xRacing/Branding/blob/master/ic_oxr.png?raw=true", 
+  "description": "Reference for 0xRacing tokenized eSports / eRacing / sim racing sponsorships and digital collectibles.", 
+  "attributes": [
+    {
+      "trait_type": "series", 
+      "value": "Sponsor Collectible"
+    },
+    {
+      "trait_type": "level", 
+      "display_type": "number", 
+      "value": 2
+    },
+    {
+      "trait_type": "supply", 
+      "display_type": "number", 
+      "value": 100
+    },
+    {
+      "display_type": "number", 
+      "trait_type": "year", 
+      "value": 2020
+    },
+    {
+      "trait_type": "sponsor_period", 
+      "value": "March 22nd - March 28th"
+    },
+    {
+      "trait_type": "vehicle_location", 
+      "value": "Hood"
+    },
+    {
+      "trait_type": "month", 
+      "value": "March"
+    },
+    {
+      "display_type": "date", 
+      "trait_type": "birthday", 
+      "value": 1584217618
+    },
+    {
+      "display_type": "date", 
+      "trait_type": "sponsor_claim", 
+      "value": 1584217618
+    }
+  ],
+  "external_url": "https://0xracing.github.io/sponsor/", 
+  "background_color": "1e2222"
+}

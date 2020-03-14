@@ -1,0 +1,37 @@
+{
+  "name": "Coronavirus Charity Event",
+  "image": "https://github.com/0xRacing/Branding/blob/master/ic_oxr.png?raw=true", 
+  "description": "Digital collectible reward for donating to atleast 0.1 ETH or 10 DAI to select charities during the 0xRacing Coronavirus charity and awareness event.", 
+  "attributes": [
+    {
+      "trait_type": "series", 
+      "value": "Proof of Charitable Contribution"
+    },
+    {
+      "trait_type": "level", 
+      "display_type": "number", 
+      "value": 2
+    },
+    {
+      "trait_type": "supply", 
+      "display_type": "number", 
+      "value": 100
+    },
+    {
+      "display_type": "number", 
+      "trait_type": "year", 
+      "value": 2020
+    },
+    {
+      "trait_type": "month", 
+      "value": "March"
+    },
+    {
+      "display_type": "date", 
+      "trait_type": "birthday", 
+      "value": 1584217618
+    }
+  ],
+  "external_url": "https://0xracing.github.io/", 
+  "background_color": "1e2222"
+}
