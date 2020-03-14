@@ -1,4 +1,5 @@
 pragma solidity ^0.5.9;
+pragma experimental ABIEncoderV2;
 
 import 'github.com/OpenZeppelin/openzeppelin-solidity/blob/v2.5.0/contracts/token/ERC721/ERC721Full.sol';
 import 'github.com/OpenZeppelin/openzeppelin-solidity/blob/v2.5.0/contracts/ownership/Ownable.sol';
@@ -50,6 +51,15 @@ contract TradeableERC721Token is ERC721Full, Ownable {
          internalMinter(receivers[i], _uri, _getNextTokenId(), _isSponsor);
      }
   }
+  
+  /**
+    * @dev Mints bulk multiple tokens to single address
+    */
+  function bulkMintTokens(address receivers, string[] memory _uri, bool _isSponsor) public onlyOwner {
+     for (uint256 i = 0; i < _uri.length; i++) {
+         internalMinter(receivers, _uri[i], _getNextTokenId(), _isSponsor);
+     }
+  }
 
   /**
     * @dev Mints a token to an address with a tokenURI.
@@ -71,6 +81,7 @@ contract TradeableERC721Token is ERC721Full, Ownable {
 //Used mainly once an owner claims their sponsorship, then converts to collectible as proof of sponsorship
   function convertSponsorToCollectible(uint256 _tokenId, string memory _newUri) public {
         require(tokenListContains(_tokenId) == true);
+        require(_oxRs[_tokenId].isSponsor == true);
         address tokenOwner = ownerOf(_tokenId);
         bool canUpdate = false;
         if(msg.sender == owner()){
@@ -147,6 +158,6 @@ contract TradeableERC721Token is ERC721Full, Ownable {
  * @title 0xR
  * 0xRacing : Tokenized eSports / eRacing team, collcetibles and tokenized sponsorship 
  */
-contract f0xCollectible is TradeableERC721Token {
+contract OxRacing is TradeableERC721Token {
   constructor(address _proxyRegistryAddress) TradeableERC721Token("0xRacing", "0xR", _proxyRegistryAddress) public {  }
 }
