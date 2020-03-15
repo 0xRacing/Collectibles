@@ -2,6 +2,7 @@ pragma solidity ^0.5.9;
 pragma experimental ABIEncoderV2;
 
 import 'github.com/OpenZeppelin/openzeppelin-solidity/blob/v2.5.0/contracts/token/ERC721/ERC721Full.sol';
+import 'github.com/OpenZeppelin/openzeppelin-solidity/blob/v2.5.0/contracts/token/ERC721/ERC721Burnable.sol';
 import 'github.com/OpenZeppelin/openzeppelin-solidity/blob/v2.5.0/contracts/ownership/Ownable.sol';
 
 contract OwnableDelegateProxy { }
@@ -14,7 +15,7 @@ contract ProxyRegistry {
  * @title TradeableERC721Token
  * TradeableERC721Token - ERC721 contract that whitelists a trading address, and has minting functionality.
  */
-contract TradeableERC721Token is ERC721Full, Ownable {
+contract TradeableERC721Token is ERC721Full, ERC721Burnable, Ownable {
 
     struct oxR{
         string uri;
@@ -126,6 +127,12 @@ contract TradeableERC721Token is ERC721Full, Ownable {
 //Fetches the token URI based on tokenID
   function tokenURI(uint256 _tokenId) external view returns (string memory) {
     return _oxRs[_tokenId].uri;
+  }
+  
+  //return the struct data for the given token id 
+  function tokenStruct(uint256 _tokenId) external view returns (string memory uri, bool isSponsor, bool exist){
+       require(tokenListContains(_tokenId) == true);
+       return (_oxRs[_tokenId].uri, _oxRs[_tokenId].isSponsor, _oxRs[_tokenId].exist);
   }
 
   /**
