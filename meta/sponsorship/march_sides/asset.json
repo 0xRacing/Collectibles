@@ -1,5 +1,5 @@
 {
-  "name": "March iRacing Sponsorship",
+  "name": "March Sides Sponsorship : iRacing",
   "image": "https://github.com/0xRacing/ERC-721-0xRacing-Collectibles-Sponsors/blob/master/meta/sponsorship/march_sides/march_side.png?raw=true", 
   "description": "Racecar sponsorship for all races run in iRacing for dates between March 22nd - 28th. Company logo to be placed on side panels of racecars used. Includes 2 social post, and overlays on Twitch streams. Once purchased, please email 0xracingdao@gmail.com to complete the process. After sponsorship period, this token will convert to a Proof of Sponsorship collectible.", 
   "attributes": [
@@ -25,6 +25,10 @@
     {
       "trait_type": "sponsor_period", 
       "value": "March 22nd - March 28th"
+    },
+    {
+      "trait_type": "simulator", 
+      "value": "iRacing"
     },
     {
       "trait_type": "racecar_location", 
