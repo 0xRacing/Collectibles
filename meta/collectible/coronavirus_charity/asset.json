@@ -1,6 +1,6 @@
 {
   "name": "Coronavirus Charity Event",
-  "image": "https://github.com/0xRacing/ERC-721-0xRacing-Collectibles-Sponsors/blob/master/meta/collectible/coronavirus_charity/corona_charity.png?raw=true", 
+  "image": "https://github.com/0xRacing/ERC-721-0xRacing-Collectibles-Sponsors/blob/master/meta/collectible/coronavirus_charity/badge.png?raw=true", 
   "description": "Digital collectible reward for donating to atleast 0.1 ETH or 10 DAI to select charities during the 0xRacing Coronavirus charity and awareness event.", 
   "attributes": [
     {
