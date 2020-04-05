@@ -1,0 +1,49 @@
+{
+  "name": "Indy Month : Entire Racecar",
+  "image": "https://github.com/0xRacing/ERC-721-0xRacing-Collectibles-Sponsors/blob/master/meta/sponsorship/indy_may/asset.png?raw=true", 
+  "description": "Racecar sponsorship for all races run in iRacing Indycar races during the month of May, infamous for the running of the Indianapolis 500. Given the current COVID-19 global crisis, eSports / sim racing has exploded in growth. 0xRacing will be participating in multiple digial Indy 500 races and Indycar events. Company / brand will be featured across the entire racecar. Includes 2 social post per week, and overlays on Twitch streams. Once purchased, please email 0xracingdao@gmail.com to complete the process. After sponsorship period, this token will convert to a Proof of Sponsorship collectible.", 
+  "attributes": [
+    {
+      "trait_type": "series", 
+      "value": "Sponsor Opportunity"
+    },
+    {
+      "trait_type": "level", 
+      "display_type": "number", 
+      "value": 1
+    },
+    {
+      "trait_type": "supply", 
+      "display_type": "number", 
+      "value": 1
+    },
+    {
+      "display_type": "number", 
+      "trait_type": "year", 
+      "value": 2020
+    },
+    {
+      "trait_type": "sponsor_period", 
+      "value": "May 1st - May 31st"
+    },
+    {
+      "trait_type": "simulator", 
+      "value": "iRacing"
+    },
+    {
+      "trait_type": "racecar_location", 
+      "value": "Entire Racecar"
+    },
+    {
+      "trait_type": "month", 
+      "value": "May"
+    },
+    {
+      "display_type": "date", 
+      "trait_type": "birthday", 
+      "value": 1586124753
+    }
+  ],
+  "external_url": "https://0xracing.github.io/sponsor/", 
+  "background_color": "1e2222"
+}
